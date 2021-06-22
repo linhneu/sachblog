@@ -1,0 +1,139 @@
+*{ margin:0px; padding:0; }
+body {
+    width: 1200px;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.top .logo img {
+    width: 250px;
+   
+}
+.menutop{
+    width: 100%;
+    height: 40px;
+    
+    line-height: 40px;
+    padding-left: 100px;
+    margin-top: 150px;
+}
+.menutop > ul {
+    display: flex;
+    list-style: none;
+}
+.menutop > ul > li {}
+._litem {
+    position: relative;
+    height:40px;
+    line-height: 40px;
+}
+.menutop > ul >li a {
+    text-decoration: none;
+}
+._litem a.layer1 {
+    color:rgb(51, 50, 50);
+    padding: 10px 20px;
+}
+._litem:hover a.layer1 {
+    color: white;
+    background-color: rgb(59, 59, 59);
+}
+._litem .layer2 {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    width: 200px;
+    background-color: rgb(184, 175, 175);
+}
+._litem:hover .layer2 {
+    visibility: visible;
+    opacity: 1;
+}
+._litem .layer2 ul {
+    list-style: none;
+}
+._litem .layer2 ul li a{
+    display:block;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 5 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    border-bottom:1px solid rgb(194, 190, 190)
+}
+._litem:hover .layer2 ul li a
+{
+    background: white;
+    color:gray ;
+}
+.content {
+    display:flex;
+    margin-left: 30px;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 900px;
+}
+.content .left {
+    width: 70%;
+    display: block;
+}
+.content .left .kind h3 a  {
+    text-decoration: none;
+    color: white ;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content .left .kind h3 {
+    background: rgb(238, 155, 0);
+    line-height: 26px;
+    padding: 3px 20px 3px 20px;
+    float: left;
+    clear: both;
+    border-radius: 3px;
+    text-align: left;
+}
+.maintitle {
+    margin-top:50px;
+}
+.content .left .maintitle h1,h2 { font-style: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(17, 139, 99);
+    padding: 2px;
+    display: block;
+    text-align: center;
+}
+.topcomment {
+    border-bottom: 1px solid #e9ebee;
+    line-height: 25px;
+    margin-bottom: 24px;
+    padding: 8px 0;
+}
+
+.undercomment {
+    display: flex;
+}
+.boxcomment .up {
+    font-size: 16px;
+    padding: 12px 8px;
+    border: 1px solid #d3d6db;
+    width: 728px;
+}
+.boxcomment .up .box {
+    width: 100%;
+}
+.boxcomment .down {
+    text-align: right;
+    padding-top: 7px;
+}
+.review img {
+    padding-bottom: 10px;
+}
+.content .right img
+{
+    width: 500px; height: 500px;
+}
